@@ -1,5 +1,5 @@
 ﻿
-namespace UUID_Descrambler
+namespace GUID_Descrambler
 {
     partial class Form1
     {
@@ -54,7 +54,7 @@ namespace UUID_Descrambler
             this.inputLabel.Name = "inputLabel";
             this.inputLabel.Size = new System.Drawing.Size(37, 13);
             this.inputLabel.TabIndex = 1;
-            this.inputLabel.Text = "UUID:";
+            this.inputLabel.Text = "GUID:";
             // 
             // includeDashesCheckBox
             // 
@@ -129,7 +129,7 @@ namespace UUID_Descrambler
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "UUID Descrambler";
+            this.Text = "GUID Descrambler";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

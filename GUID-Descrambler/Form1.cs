@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
-namespace UUID_Descrambler
+namespace GUID_Descrambler
 {
     public partial class Form1 : Form
     {
@@ -40,7 +40,7 @@ namespace UUID_Descrambler
                 }
                 else
                 {
-                    validLabel.Text = "Not a valid UUID";
+                    validLabel.Text = "Not a valid GUID";
                     validLabel.ForeColor = Color.Red;
                     return;
                 }
