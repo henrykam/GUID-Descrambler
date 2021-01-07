@@ -36,11 +36,12 @@ namespace UUID_Descrambler
             this.outputLabel = new System.Windows.Forms.Label();
             this.copyButton = new System.Windows.Forms.Button();
             this.validLabel = new System.Windows.Forms.Label();
+            this.descriptionLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // inputTextBox
             // 
-            this.inputTextBox.Location = new System.Drawing.Point(12, 96);
+            this.inputTextBox.Location = new System.Drawing.Point(12, 83);
             this.inputTextBox.Name = "inputTextBox";
             this.inputTextBox.Size = new System.Drawing.Size(341, 20);
             this.inputTextBox.TabIndex = 0;
@@ -49,16 +50,15 @@ namespace UUID_Descrambler
             // inputLabel
             // 
             this.inputLabel.AutoSize = true;
-            this.inputLabel.Location = new System.Drawing.Point(12, 80);
+            this.inputLabel.Location = new System.Drawing.Point(12, 67);
             this.inputLabel.Name = "inputLabel";
             this.inputLabel.Size = new System.Drawing.Size(37, 13);
             this.inputLabel.TabIndex = 1;
             this.inputLabel.Text = "UUID:";
-            this.inputLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // includeDashesCheckBox
             // 
-            this.includeDashesCheckBox.Location = new System.Drawing.Point(12, 160);
+            this.includeDashesCheckBox.Location = new System.Drawing.Point(12, 147);
             this.includeDashesCheckBox.Name = "includeDashesCheckBox";
             this.includeDashesCheckBox.Size = new System.Drawing.Size(104, 24);
             this.includeDashesCheckBox.TabIndex = 2;
@@ -68,7 +68,7 @@ namespace UUID_Descrambler
             // 
             // outputTextBox
             // 
-            this.outputTextBox.Location = new System.Drawing.Point(12, 135);
+            this.outputTextBox.Location = new System.Drawing.Point(12, 122);
             this.outputTextBox.Name = "outputTextBox";
             this.outputTextBox.ReadOnly = true;
             this.outputTextBox.Size = new System.Drawing.Size(341, 20);
@@ -77,7 +77,7 @@ namespace UUID_Descrambler
             // outputLabel
             // 
             this.outputLabel.AutoSize = true;
-            this.outputLabel.Location = new System.Drawing.Point(12, 119);
+            this.outputLabel.Location = new System.Drawing.Point(12, 106);
             this.outputLabel.Name = "outputLabel";
             this.outputLabel.Size = new System.Drawing.Size(42, 13);
             this.outputLabel.TabIndex = 4;
@@ -85,7 +85,7 @@ namespace UUID_Descrambler
             // 
             // copyButton
             // 
-            this.copyButton.Location = new System.Drawing.Point(278, 161);
+            this.copyButton.Location = new System.Drawing.Point(278, 148);
             this.copyButton.Name = "copyButton";
             this.copyButton.Size = new System.Drawing.Size(75, 23);
             this.copyButton.TabIndex = 5;
@@ -97,16 +97,26 @@ namespace UUID_Descrambler
             // 
             this.validLabel.AutoSize = true;
             this.validLabel.ForeColor = System.Drawing.Color.Green;
-            this.validLabel.Location = new System.Drawing.Point(55, 80);
+            this.validLabel.Location = new System.Drawing.Point(55, 67);
             this.validLabel.Name = "validLabel";
             this.validLabel.Size = new System.Drawing.Size(0, 13);
             this.validLabel.TabIndex = 6;
+            // 
+            // descriptionLabel
+            // 
+            this.descriptionLabel.Location = new System.Drawing.Point(12, 9);
+            this.descriptionLabel.Name = "descriptionLabel";
+            this.descriptionLabel.Size = new System.Drawing.Size(341, 41);
+            this.descriptionLabel.TabIndex = 7;
+            this.descriptionLabel.Text = "Some databases store GUIDs in reverse byte order for indexing purposes. Enter a G" +
+    "UID below to obtain the reverse byte order representation of the GUID.";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(367, 192);
+            this.ClientSize = new System.Drawing.Size(367, 184);
+            this.Controls.Add(this.descriptionLabel);
             this.Controls.Add(this.validLabel);
             this.Controls.Add(this.copyButton);
             this.Controls.Add(this.outputLabel);
@@ -135,6 +145,7 @@ namespace UUID_Descrambler
         private System.Windows.Forms.Label outputLabel;
         private System.Windows.Forms.Button copyButton;
         private System.Windows.Forms.Label validLabel;
+        private System.Windows.Forms.Label descriptionLabel;
     }
 }
 

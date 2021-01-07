@@ -22,12 +22,7 @@ namespace UUID_Descrambler
         {
 
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+         
         private void includeDashesCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             inputTextBox_TextChanged(sender, e);
@@ -45,7 +40,7 @@ namespace UUID_Descrambler
                 }
                 else
                 {
-                    validLabel.Text = "UUID cannot be descrambled";
+                    validLabel.Text = "Not a valid UUID";
                     validLabel.ForeColor = Color.Red;
                     return;
                 }
@@ -54,7 +49,7 @@ namespace UUID_Descrambler
             }
             else
             {
-                validLabel.Text = "Invalid";
+                validLabel.Text = "Invalid format";
                 validLabel.ForeColor = Color.Red;
             }                        
         }
@@ -93,5 +88,7 @@ namespace UUID_Descrambler
         {
             Clipboard.SetText(outputTextBox.Text);
         }
+
+ 
     }
 }
