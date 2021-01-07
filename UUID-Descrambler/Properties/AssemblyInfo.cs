@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("UUID-Descrambler")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A small utility to reverse the byte order of a GUID.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Henry Kam")]
 [assembly: AssemblyProduct("UUID-Descrambler")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
